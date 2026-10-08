@@ -21,7 +21,7 @@ const closePromo = () => {
   promoModal.setAttribute("aria-hidden", "true");
 };
 const claimPromo = () => {
-  window.location.href = "https://nalydi.com/ref/6pbwr44";
+  //window.location.href = "https://nalydi.com/ref/6pbwr44";
 };
 
 const openPromo = () => {
@@ -34,7 +34,7 @@ openPromo();
 
 document
   .querySelectorAll("[data-close-promo]")
-  .forEach((button) => button.addEventListener("click", claimPromo));
+  .forEach((button) => button.addEventListener("click", closePromo));
 document
   .querySelectorAll("[data-promo-claim]")
   .forEach((button) => button.addEventListener("click", claimPromo));
